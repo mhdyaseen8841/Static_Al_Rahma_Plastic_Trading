@@ -59,49 +59,31 @@
             position: relative;
             z-index: 30;
         }
-
-        
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header & Navigation -->
-     <header class="bg-white shadow-lg sticky top-0 z-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo & Company Name (SVG based on uploaded image style) -->
-                <!-- UPDATED: Added padding, rounded corners, light background, and shadow for a softer, elevated look -->
-                <a href="#hero" class="flex items-center text-brand-blue p-2    transition duration-300 hover:shadow-xl">
-                    <!-- Custom SVG Logo: Mimics the structure and colors of the reference image -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" class="w-48 sm:w-48 h-auto" role="img" aria-label="Al Rahma Plastic Logo with Text">
-                        
-                        <!-- Main Heading: AL RAHMA (Big and Bold) -->
-                        <text x="10" y="30" font-family="'Inter', sans-serif" font-size="30" font-weight="900" fill="#004d99">AL RAHMA</text>
-                        
-                        <!-- Secondary Text: PLASTIC PRODUCTS TRADING L.L.C - S P C (Smaller) -->
-                        <text x="10" y="48" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#004d99">PLASTIC PRODUCTS TRADING L.L.C - S P C</text>
-
-                        <!-- Swooshes - fixed positioning to prevent clipping -->
-                        <g transform="translate(0, 50)"> 
-                            <!-- Deep Blue wave -->
-                            <path fill="#004d99" d="M0 30 Q 100 0, 200 30 T 400 30 V 45 H 0 Z"/>
-                            
-                            <!-- Red accent wave -->
-                            <path fill="#E74C3C" d="M0 35 Q 100 15, 200 35 T 400 35 V 45 H 0 Z"/>
-                        </g>
-                    </svg>
+                <!-- Logo/Company Name -->
+                <a href="#hero" class="text-2xl font-extrabold text-brand-blue tracking-tight">
+                    AL RAHMA PLASTIC 
                 </a>
                 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-brand-blue transition duration-300 font-medium">About Us</a>
-                    <a href="#products" class="text-gray-600 hover:text-brand-blue transition duration-300 font-medium">Products</a>
-                    <a href="#why-us" class="text-gray-600 hover:text-brand-blue transition duration-300 font-medium">Why Choose Us</a>
-                    <a href="#contact" class="px-5 py-2 brand-blue text-white rounded-lg shadow-xl hover:bg-brand-blue-dark transition duration-300 font-semibold">Contact</a>
-                </nav>
+               <!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center space-x-8">
+  <a href="#about" class="text-gray-600 hover:text-brand-blue transition duration-300">About Us</a>
+  <a href="#products" class="text-gray-600 hover:text-brand-blue transition duration-300">Products</a>
+  <a href="#why-us" class="text-gray-600 hover:text-brand-blue transition duration-300">Why Choose Us</a>
+  <a href="#contact" class="px-4 py-2 brand-blue text-white rounded-lg shadow-lg hover:bg-brand-blue-dark transition duration-300">Contact</a>
+</nav>
+
 
                 <!-- Mobile Menu Button (Hamburger) -->
-                <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none p-2 rounded-md hover:bg-gray-100">
+                <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
@@ -114,9 +96,10 @@
                 <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">Products</a>
                 <a href="#why-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">Why Choose Us</a>
                 <a href="#contact" 
-                    class="block w-full text-center px-3 py-2 my-2 brand-blue text-white rounded-lg shadow-xl hover:bg-brand-blue-dark transition duration-300 font-semibold">
-                    Contact Us
-                </a>
+   class="block w-full text-center px-3 py-2 my-2 brand-blue text-white rounded-lg shadow-lg hover:bg-brand-blue-dark transition duration-300">
+   Contact Us
+</a>
+
             </nav>
         </div>
     </header>
@@ -270,17 +253,17 @@
         </section>
 
 
-  <section id="products" class="py-12 bg-gray-50">
+     <section id="products" class="py-12 bg-gray-50">
   <div class="container mx-auto px-4">
     <div class="mb-8 text-center">
       <h2 class="text-3xl font-semibold">Our Products</h2>
     </div>
 
     <!-- Filters -->
-       <div class="flex justify-start sm:justify-center mb-8 space-x-3 overflow-x-auto pb-2 custom-scrollbar">
+    <div class="flex justify-center mb-6 space-x-3">
       <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-indigo-600 text-white" data-filter="*">All</button>
       <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="containers">Containers</button>
-      <!-- <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="cleaning">Cleaning Supplies</button> -->
+      <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="cleaning">Cleaning Supplies</button>
       <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="packaging">Packaging</button>
       <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="plates">Plates</button>
       <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium bg-gray-100 text-gray-700" data-filter="paperbag">Paper Bag</button>
